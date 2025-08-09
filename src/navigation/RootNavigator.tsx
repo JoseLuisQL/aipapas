@@ -8,10 +8,10 @@ import { Button } from 'react-native-paper';
 import HomeScreen from '../screens/Farmer/HomeScreen';
 import CaptureScreen from '../screens/Farmer/CaptureScreen';
 import HistoryScreen from '../screens/Farmer/HistoryScreen';
-import VarietiesScreen from '../screens/Farmer/VarietiesScreen';
+import FarmerVarietiesScreen from '../screens/Farmer/VarietiesScreen';
 import UsersScreen from '../screens/Admin/UsersScreen';
 import DashboardScreen from '../screens/Admin/DashboardScreen';
-import VarietiesScreen from '../screens/Admin/VarietiesScreen';
+import AdminVarietiesScreen from '../screens/Admin/VarietiesScreen';
 import ContentScreen from '../screens/Admin/ContentScreen';
 import FeedbackScreen from '../screens/Admin/FeedbackScreen';
 import ReportsScreen from '../screens/Admin/ReportsScreen';
@@ -40,7 +40,7 @@ function FarmerTabs() {
       <Tab.Screen name="Inicio" component={HomeScreen} />
       <Tab.Screen name="Capturar" component={CaptureScreen} />
       <Tab.Screen name="Historial" component={HistoryScreen} />
-      <Tab.Screen name="Variedades" component={VarietiesScreen} />
+      <Tab.Screen name="Variedades" component={FarmerVarietiesScreen} />
     </Tab.Navigator>
   );
 }
@@ -60,7 +60,7 @@ function AdminDrawer() {
     <Drawer.Navigator>
       <Drawer.Screen name="Dashboard" component={DashboardScreen} />
       <Drawer.Screen name="Usuarios" component={UsersScreen} />
-      <Drawer.Screen name="Variedades" component={VarietiesScreen} />
+      <Drawer.Screen name="Variedades" component={AdminVarietiesScreen} />
       <Drawer.Screen name="Contenido" component={ContentScreen} />
       <Drawer.Screen name="Feedback" component={FeedbackScreen} />
       <Drawer.Screen name="Reportes" component={ReportsScreen} />
